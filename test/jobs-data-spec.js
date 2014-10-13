@@ -24,7 +24,7 @@ describe("get jobs", function() {
             done();
         });
     })
-    git remote add origin https://github.com/RaduLupescu/jobFinder.git
+    
     it("should never be empty since jobs are seeded", function() {
         expect(jobs.length).to.be.at.least(1);
     });
