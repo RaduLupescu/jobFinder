@@ -13,6 +13,8 @@ exports.findJobs = findJobs;
 
 var createJob = Promise.promisify(Job.create, Job);
 
+exports.saveJob = createJob;
+
 exports.seedJobs = function() {
     return findJobs({}).then(function(collection) {
         if(collection.length === 0) {
